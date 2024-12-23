@@ -18,19 +18,22 @@ red_arr2 = [4,6,13,21,22,25]
 red_arr3 = [2,5,11,22,30,33]
 red_arr4 = [2,9,11,17,20,30]
 red_arr5 = [1,3,16,22,23,30]
+red_arr6 = [2,4,11,22,27,32]
+red_arr7 = [5,11,13,16,21,30]
 
 
 
-red_list_arr = [red_arr0,red_arr1,red_arr2,red_arr3,red_arr4,red_arr5]
+
+red_list_arr = [red_arr0,red_arr1,red_arr2,red_arr3,red_arr4,red_arr5,red_arr6,red_arr7]
 
 print(red_list_arr)
 
-red_count_arr = [0]* 6 ##记录六组数，随机出现的位置（第几次随机出现的）
+red_count_arr = [0]* 8 ##记录八组数，随机出现的位置（第几次随机出现的）
 
 sum = 0
 whil_flag = True ##主循环控制，六组数字全匹配后退出循环
 
-random.seed(2024146)
+random.seed(2024148)
 
 while whil_flag :
     red_arr = [0] * 6 ##存储生产的随机数组
@@ -69,7 +72,7 @@ ave = 0 #平均数
 for val in red_count_arr :
     count += val
 
-ave = count/6
+ave = count/8
 print(red_count_arr)
 print(f"cont={count}")
 print(f"ave={ave}")
@@ -77,7 +80,7 @@ print(f"ave={ave}")
 
 
 
-print(random.randint(17741,4340336))
+print(random.randint(78680,1328530))
 
 
 
