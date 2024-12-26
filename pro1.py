@@ -1,39 +1,28 @@
 import random
 
-
-
-#red_arr0 = [4,5,11,15,20,32]
-
-#red_arr0 = [1,4,25,27,28,33]
-#red_arr1 = [1,11,15,27,30,33]
-#red_arr0 = [2,4,13,16,18,20]
-#red_arr1 = [5,11,17,18,30,31]
-#red_arr2 = [3,11,15,20,25,26]
-#red_arr0 = [4,9,10,19,26,27]
-#red_arr0 = [2,7,11,21,27,28]
-#red_arr0 = [15,16,20,22,23,29]
-red_arr0 = [4,7,8,17,22,26]
-red_arr1 = [1,2,7,15,24,29]
-red_arr2 = [4,6,13,21,22,25]
-red_arr3 = [2,5,11,22,30,33]
-red_arr4 = [2,9,11,17,20,30]
-red_arr5 = [1,3,16,22,23,30]
-red_arr6 = [2,4,11,22,27,32]
-red_arr7 = [5,11,13,16,21,30]
-
-
-
-
-red_list_arr = [red_arr0,red_arr1,red_arr2,red_arr3,red_arr4,red_arr5,red_arr6,red_arr7]
+red_list_arr = [
+    [15,16,20,22,23,29],
+    [4,7,8,17,22,26],
+    [1,2,7,15,24,29],
+    [4,6,13,21,22,25],
+    [2,5,11,22,30,33],
+    [2,9,11,17,20,30],
+    [1,3,16,22,23,30],
+    [2,4,11,22,27,32],
+    [5,11,13,16,21,30],
+    [2,6,15,16,21,23]
+]
 
 print(red_list_arr)
 
-red_count_arr = [0]* 8 ##记录八组数，随机出现的位置（第几次随机出现的）
+m = len(red_list_arr)
+
+red_count_arr = [0]* m ##记录八组数，随机出现的位置（第几次随机出现的）
 
 sum = 0
 whil_flag = True ##主循环控制，六组数字全匹配后退出循环
 
-random.seed(2024148)
+random.seed(2024149)
 
 while whil_flag :
     red_arr = [0] * 6 ##存储生产的随机数组
@@ -72,7 +61,7 @@ ave = 0 #平均数
 for val in red_count_arr :
     count += val
 
-ave = count/8
+ave = count/m
 print(red_count_arr)
 print(f"cont={count}")
 print(f"ave={ave}")
@@ -80,7 +69,7 @@ print(f"ave={ave}")
 
 
 
-print(random.randint(78680,1328530))
+print(random.randint(74966,9830820))
 
 
 
