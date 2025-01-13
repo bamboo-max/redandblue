@@ -4,8 +4,8 @@ import random
 
 
 
-#maxSum = 965985
-maxSum = random.randint(1000000,10000000)
+maxSum = 2083658
+#maxSum = random.randint(1000000,10000000)
 s = 0
 random.seed(20250109)
 red_arr = [0] * 6 ##存储生产的随机数组
