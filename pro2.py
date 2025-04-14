@@ -4,7 +4,8 @@ import random
 
 
 
-maxSum = 1792125
+maxSum = 983256
+
 #maxSum = random.randint(100000,1000000)
 s = 0
 random.seed(2025034)
