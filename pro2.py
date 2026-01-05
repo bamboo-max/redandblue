@@ -4,11 +4,11 @@ import random
 
 
 
-maxSum = 572037
+maxSum = 1128081
 
 #maxSum = random.randint(100000,1000000)
 s = 0
-random.seed(2025118)
+random.seed(7910131618)
 red_arr = [0] * 6 ##存储生产的随机数组
 while s < maxSum:
     red_arr = [0] * 6 ##存储生产的随机数组
