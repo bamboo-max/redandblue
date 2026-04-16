@@ -4,7 +4,7 @@ import random
 #previous_list = [654,539,603,67,754,95]
 previous_list = [654, 539, 603]
 
-random.seed(2024314)
+#random.seed(2024314)
 
 while_flag = True
 
