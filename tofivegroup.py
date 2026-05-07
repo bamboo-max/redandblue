@@ -38,6 +38,7 @@ def generate_5_red_groups():
     return groups
 
 def group_exists(target, groups):
+    #判断target中groups中是否存在，存在返回True
     target_set = set(target)
     for g in groups:
         if target_set.issubset(set(g)):

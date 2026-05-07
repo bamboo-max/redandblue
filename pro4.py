@@ -1,3 +1,6 @@
+#循环随机生成的5组不重复的双色球号码，与历史中奖数据比较，直到其中一组数据中有与历史中奖号码完全相同的号码为止，并记录生成次数，
+#多组历史号码比较完成后，计算平均数
+
 import tofivegroup as fg
 
 import pandas as pd
@@ -5,7 +8,7 @@ import pandas as pd
 
 loopnum = 5
 df = pd.read_excel("xsq.xlsx")
-data1 = df.tail(loopnum) #读取文件后15行
+data1 = df.tail(loopnum) #读取文件后loopnum行
 rows_as_dicts = data1.to_dict(orient='records') #将读取DataFrame 对象转换为字典
 red_list_arr = []
 

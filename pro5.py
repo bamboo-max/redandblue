@@ -1,6 +1,6 @@
 import tofivegroup as fg
-
-maxSum = 262791
+#根据maxSum的次数，每次生成5组号码完全不重复的双色球号码。
+maxSum = 128426
 
 s = 0
 
